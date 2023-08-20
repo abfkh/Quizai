@@ -1,3 +1,5 @@
+import HistoryCard from "@/components/dashboard/HistoryCard";
+import QuizMeCard from "@/components/dashboard/QuizMeCard";
 import { getAuthSession } from "@/lib/nextauth";
 import { redirect } from "next/navigation";
 import React from "react";
@@ -5,7 +7,7 @@ import React from "react";
 type Props = {};
 
 export const metadata = {
-  title: "Dashboard | Quizmify",
+  title: "Dashboard | Abfkh Ai",
   description: "Quiz yourself on anything!",
 };
 
@@ -15,7 +17,17 @@ const Dasboard = async (props: Props) => {
     redirect("/");
   }
 
-  return <main className="p-8 mx-auto max-w-7xl">HI </main>;
+  return (
+    <main className="p-8 mx-auto max-w-7xl">
+      <div className="flex item-center">
+        <h2 className="mr-2 text-3xl font-bold tracking-tight">Dashboard</h2>
+        <div className="grid gap-4 mt-4 md:grid-cols-2">
+          <QuizMeCard />
+          <HistoryCard />
+        </div>
+      </div>
+    </main>
+  );
 };
 
 export default Dasboard;
