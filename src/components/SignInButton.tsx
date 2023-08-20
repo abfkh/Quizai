@@ -14,10 +14,20 @@ const SignInButton = (props: Props) => {
         signIn("google").catch(console.error);
       }}
     >
-      {" "}
-      Sign in
+      {props.text}
     </Button>
   );
 };
+// const SignInButton = (props: Props) => {
+//   return (
+//     <Button
+//       onClick={() => {
+//         signIn("google").catch(console.error);
+//       }}
+//     >
+//       {""}
+//     </Button>
+//   );
+// };
 
 export default SignInButton;
