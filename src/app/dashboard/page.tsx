@@ -15,7 +15,7 @@ const Dasboard = async (props: Props) => {
     redirect("/");
   }
 
-  return <main className="p-8 mx-auto max-w-7xl">HYGHFGH</main>;
+  return <main className="p-8 mx-auto max-w-7xl">HI </main>;
 };
 
 export default Dasboard;
