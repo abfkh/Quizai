@@ -11,7 +11,7 @@ const HistoryCard = (props: Props) => {
 
   return (
     <Card
-      className="hover:cursor-pointer hover:opacity-75 "
+      className="hover:cursor-pointer hover:opacity-75  "
       onClick={() => {
         router.push("/quiz");
       }}
